@@ -15,11 +15,15 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { FIREBASE_CONFIG } from './app.firebase.config'
 
+// Pages
+import { RegisterPage } from '../pages/register/register';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { FIREBASE_CONFIG } from './app.firebase.config'
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
